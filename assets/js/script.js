@@ -33,29 +33,26 @@ var generatePassword = function() {
       var charUpperCase = window.confirm("Would you like to include upprcase characters");
       var charLowerCase = window.confirm("Would you like to include lowercase characters");
       
+      // all possibile combinations
       var combinedArray = [];
 
       if (charSpecial) {
         var randomElement = specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
-        passwordGenerated = passwordGenerated + randomElement;
         combinedArray = combinedArray.concat(specialCharacters);
       }
 
       if (charNumeric) {
         var randomElement2 = numbers[Math.floor(Math.random() * numbers.length)];
-        passwordGenerated = passwordGenerated + randomElement2;
         combinedArray = combinedArray.concat(numbers);
       }
 
       if (charUpperCase) {
         var randomElement3 = upperCase[Math.floor(Math.random() * upperCase.length)];
-        passwordGenerated = passwordGenerated + randomElement3;
         combinedArray = combinedArray.concat(upperCase);
       }
       
       if (charLowerCase) {
         var randomElement4 = lowerCase[Math.floor(Math.random() * lowerCase.length)];
-        passwordGenerated = passwordGenerated + randomElement4;
         combinedArray = combinedArray.concat(lowerCase);
       }
 
@@ -65,8 +62,8 @@ var generatePassword = function() {
        return;
       }
 
-      var passwordLength = numCharacters - passwordGenerated.length;
-      for (var i = 0; i < passwordLength; i++) {
+     ;
+      for (var i = 0; i < numCharacters; i++) {
         passwordGenerated = passwordGenerated + combinedArray[Math.floor(Math.random() * combinedArray.length)];
       }
 
