@@ -37,22 +37,18 @@ var generatePassword = function() {
       var combinedArray = [];
 
       if (charSpecial) {
-        var randomElement = specialCharacters[Math.floor(Math.random() * specialCharacters.length)];
         combinedArray = combinedArray.concat(specialCharacters);
       }
 
       if (charNumeric) {
-        var randomElement2 = numbers[Math.floor(Math.random() * numbers.length)];
         combinedArray = combinedArray.concat(numbers);
       }
 
       if (charUpperCase) {
-        var randomElement3 = upperCase[Math.floor(Math.random() * upperCase.length)];
         combinedArray = combinedArray.concat(upperCase);
       }
       
       if (charLowerCase) {
-        var randomElement4 = lowerCase[Math.floor(Math.random() * lowerCase.length)];
         combinedArray = combinedArray.concat(lowerCase);
       }
 
