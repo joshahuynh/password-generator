@@ -1,6 +1,6 @@
 Challenge 3: Password Generator
 
-In this challenge, I used HTML, CSS, and Javascript in order to creeate an application that automatically generates a password with specific user criterias such as password length, upper-case letters, lower-case letters, numbers, and special characters.
+In this challenge, I used HTML, CSS, and Javascript in order to create an application that automatically generates a password with specific user criterias such as password length, upper-case letters, lower-case letters, numbers, and special characters.
 
 User Story: As an employee with access to sensitive data, I want to randomly generate a passowrd that meets certain criteria, so that I can create a strong password that provides greater security.
 
